@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="sidebar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="content">
+            <nav id='mainNav' class="navbar navbar-expand-md">
+                <button class="btn btn-outline-dark" id='sidebarButton'>
+                    
+                          <i class="fa fa-bars"></i>
+                </button>
+                <!-- <span class="navbar-brand ml-1">Navbar</span> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    =
+                </button>
+
+                <div class='collapse navbar-collapse text-center' id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto applyLeftOnMedDev">
+                        <li class="nav-item active">
+                            <a href='#' class="nav-link text-primary active">
+                                Tasks (21)
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=' #' class="nav-link text-muted">
+                                Discussions (8)
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href='#' class="nav-link text-muted">
+                                Files (2)
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href='#' class="nav-link text-muted">
+                                Milestones (4)
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href='#' class="nav-link text-muted">
+                                Activity (8)
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href='#' class="nav-link text-muted">
+                                Reports (5)
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div id='sideBarToggle' class='sidebar'>
+                    <ul class='navbar-nav mr-auto mt-auto text-center sideBarList'>
+                        <li class="nav-item mt-2">
+                            <span class='float-left mt-2'>Project</span>
+                            <span class='float-right'>
+                                <button class="btn" id='rightSidebarButton'>
+                                    <i class="fa fa-bars" style="color:white"></i>
+                                </button>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <input type="text" class="form-control mt-3 form-control-sm" id="search" placeholder="Search">
+                        </li>
+                        <br />
+
+                        <li class="nav-item">
+                            <span><b><a href='#'>Favorites</a> </b></span>
+                            <i class="fa fa-plus-square ml-4" style="color:blue;"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>Push.ly</a>
+                            </span>
+                            <i class="fa fa-star ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car" style="color:orange;"></i>
+                                <a href='#'>Schedule.ly</a>
+                            </span>
+                            <i class="fa fa-star ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car" style="color:orange;"></i>
+                                <a href='#'>Track.ly</a>
+                            </span>
+                            <i class="fa fa-star ml-4"></i>
+                        </li>
+                        <br />
+                        <li class="nav-item">
+                            <span>
+                               <b> <a href='#'>Projects</a> </b>
+                            </span>
+                            <i class="fa fa-plus-square ml-4" style="color:blue;"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car" style="color:green;"></i>
+                                <a href='#'>Botpath</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>User tracker</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car" style="color:red;"></i>
+                                <a href='#'>PBX Plus</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car" style="color:red"></i>
+                                <a href='#'>Bugs.ly</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>User Tracker</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>Plugins.ly</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>Mock.ly</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-envelope-o"></i>
+                                <a href='#'>MailSend</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>Perform.ly</a>
+                            </span>
+                            <i class="fa fa-star-o ml-4"></i>
+                        </li>
+                        <br />
+                        <li class="nav-item">
+                            <span><b><a href='#'>Archieved</a> </b></span>
+                            <i class="fa fa-plus-square ml-4" style="color:blue;"></i> 
+                        </li>
+
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-car"></i>
+                                <a href='#'>Site Recording</a>
+                            </span>
+
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa fa-search" style="color:red"></i>
+                                <a href='#'>Finder.io</a>
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id='left-content' class="left-content">
+
+                <div class="content-wrapper">
+                    <div class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h3 class="tasks">Tasks</h3>
+                                </div>
+                                <div class="col-md-6 d-flex">
+                                    <div>
+                                        <input type="text" class="form-control" id="search" placeholder="Search for tasks">
+                                    </div>
+                                    <div class="btn-group btn-group-sm ml-4">
+                                        <button class="btn activeButton">
+                                            <i class="fa fa-reorder"></i>
+                                        </button>
+                                        <button class="btn"><i class="fa fa-pause"></i></button>
+                                        <button class="btn btnLast"><i class="fa fa-calendar"></i></button>
+                                    <!-- </div>
+                                    <div> -->
+                                        <!-- style="font-size:24px"  -->
+                                        <button class="btn btnLast ml-2"> <i class="fa fa-gear  "></i></button>
+                                        
+                                    <!-- </div>
+                                    <div> -->
+
+                                        <button type="button" class="btn btnLast float-left ml-2">+ Add Group</button>
+
+                                        <button type="button" class="btn btn-primary ml-2 text-white">+ Add Task</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="btn-group btn-group-sm col-md-6">
+                                    <button type="button" class="btn ">
+                                        <i class="fa fa-star mr-1"></i>Status</button>
+                                    <button type="button" class="btn ">
+                                        <i class="fa  fa-bar-chart mr-1"></i>Priority</button>
+                                    <button type="button" class="btn ">
+                                        <i class="fa fa-calendar mr-1"></i>Set Due date</button>
+                                    <button type="button" class="btn ">
+                                        <i class="fa fa-trash mr-1"></i></button>
+
+                                </div>
+                                <div class="measure col-md-6">
+                                    <p class="float-right mr-3">4 items selected | Select all(105)</p>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <table class="table text-center mt-2">
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" name="name" /></th>
+                                            <th>Tasks</th>
+                                            <th>
+                                                <button type="button" class="btn  dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                    Owner
+                                                </button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                    Due date
+                                                </button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn  dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                    Priority
+                                                </button>
+                                            </th>
+                                            <th>
+                                                <button type="button" class="btn  dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                    Status
+                                                </button>
+                                            </th>
+                                            <th>
+                                                
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Group-1
+                                            </td>
+                                            <td colspan="6">
+                                                <a href="#" class="float-right">+ Add Task</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name=name1></td>
+                                            <td>Filters issue fixing</td>
+                                            <td class='text-left'> <img src="images//user.png" class="user-image mr-2" alt="User Image">Carl
+                                                Webb </td>
+                                            <td>September 03,2019</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-primary ml-2">Medium</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-sm btn-primary ml-2">Ongoing</button>
+                                            </td>
+                                            <td><i class="fa fa-ellipsis-h"></i></td>
+                                        </tr>
+
+
+
+                                        
+                                        <tr>
+                                            <td><input type="checkbox" name=name3 checked></td>
+                                            <td>Date picker issues</td>
+                                            <td class='text-left'> <img src="images//user.png" class="user-image mr-2" alt="User Image">Maria
+                                                Cruzz </td>
+                                            <td>September 18,2019</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-danger ml-2">High</button>
+                                            </td>
+                                            <td>
+                                                <button class=" btn btn-sm btn-danger ml-2">Overdue </button>
+                                            </td>
+                                            <td><i class="fa fa-ellipsis-h"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><input type="checkbox" name=name2 checked></td>
+                                            <td>UI issue fixing</td>
+                                            <td class='text-left'> <img src="images//user.png" class="user-image mr-2" alt="User Image">Karan
+                                                Jackson</td>
+                                            <td>September 23,2019</td>
+                                            <td>
+                                                <button class=" btn btn-sm btn-success ml-2 ">Low</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-sm btn-success ml-2">Completed </button>
+                                            </td>
+                                            <td><i class="fa fa-ellipsis-h"></i></td>
+                                        </tr>
+
+                       
+
+                                        <tr>
+                                            <td>
+                                                Group-2
+                                            </td>
+                                            <td colspan="6">
+                                                <a href="#" class="float-right">+ Add Task</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name=name1 checked></td>
+                                            <td>Helper issues</td>
+                                            <td class='text-left'> <img src="images//user.png" class="user-image mr-2" alt="User Image">Tony
+                                                 </td>
+                                            <td>October 05,2019</td>
+                                            <td >
+                                                <button class="btn btn-sm btn-danger ml-2">High</button>
+                                            </td>
+                                            <td >
+                                                <button class="btn btn-sm btn-danger ml-2">Overdue</button>
+                                            </td>
+                                            <td><i class="fa fa-ellipsis-h"></i></td>
+                                        </tr>
+
+
+
+                                        
+                                        <tr>
+                                            <td><input type="checkbox" name=name3></td>
+                                            <td>Sorting issues</td>
+                                            <td class='text-left'> <img src="images//user.png" class="user-image mr-2" alt="User Image">Dorothy
+                                                Ryan </td>
+                                            <td>October 23,2019</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-default ml-2">Low</button>
+                                            </td>
+                                            <td>
+                                                <button class=" btn btn-sm btn-default  ml-2">Low </button>
+                                            </td>
+                                            <td><i class="fa fa-ellipsis-h"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><input type="checkbox" name=name2 checked></td>
+                                            <td>UI issue fixing</td>
+                                            <td class='text-left'> <img src="images//user.png" class="user-image mr-2" alt="User Image">Medison
+                                                Buurke</td>
+                                            <td>October 30,2019</td>
+                                            <td>
+                                                <button class=" btn btn-sm btn-primary ml-2 ">Medium</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-sm btn-success ml-2">Completed </button>
+                                            </td>
+                                            <td><i class="fa fa-ellipsis-h"></i></td>
+                                        </tr>
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        let ul = document.querySelector('ul.sideBarList');
+        let li = document.querySelectorAll('ul.sideBarList>li');
+        li.forEach(el => {
+            el.addEventListener('click', function () {
+                ul.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+            })
+        })
+        $(document).ready(function () {
+            $('#sidebarButton').on('click', function () {
+                $('#sideBarToggle').toggleClass('showSideBar');
+            });
+            $('#sidebarButton').on('click', function () {
+                $('#left-content, #mainNav').toggleClass('showSideBarparent');
+            });
+        });
+    </script>
+</body>
+
+</html>
